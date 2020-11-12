@@ -13,3 +13,4 @@ export function getQuote() {
     return response.body
     })
 }
+
