@@ -12,7 +12,7 @@ export function getDonQuote() {
   return request
   .get(trumpURL)
   .then(response => {
-    
+    console.log(response.body)
     return response.body
     })
 }
@@ -21,9 +21,9 @@ export function getKanyeQuote(){
 
  
     return request
-    .get('https://api.kanye.rest?format=text')
+    .get('https://api.kanye.rest')
     .then(response =>{
-      console.log(response.text)
-      return response.text
+      console.log(response.body)
+      return response.body
     })
 }

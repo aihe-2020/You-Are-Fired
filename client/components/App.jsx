@@ -16,8 +16,8 @@ class App extends React.Component {
     .then(res => {this.setState({donQuote: res.value})})
     // .then(res =>{this.setState({donQuote:res.value})})
     getKanyeQuote()
-      .then(res => {this.setState({kanyeQuote:res.value})})
-      
+      .then(res => {this.setState({kanyeQuote:res.quote})})
+      console.log(this.state)
       // .then(res =>{this.setState({kanyeQuote:res.value})})
     }
       // advice()
