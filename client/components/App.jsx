@@ -1,12 +1,12 @@
 import React from 'react'
-import Quote from './Quote'
+
 
 
 
 import { getDonQuote,getKanyeQuote } from '../api'
 
 import TrumpImage from './TrumpImage'
-
+import KanyeImage from './KanyeImage'
 
 
 
@@ -48,15 +48,18 @@ class App extends React.Component {
   render() {
 
     return(
-      <div>
+      <div class='wrapper'>
       <h1>You're Fired!</h1>   
 
-      
+      <div class='card'>
      <h4>{this.state.donQuote}</h4>
-     <h4>****{this.state.kanyeQuote}</h4>
-   
      <TrumpImage />
-
+     </div>
+     <div class ='card'>
+     <h4>****{this.state.kanyeQuote}</h4>
+     <KanyeImage />
+     
+     </div>
      
 
      </div>

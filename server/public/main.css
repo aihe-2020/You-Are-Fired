@@ -51,3 +51,15 @@ p {
   padding: 15px;
 
 }
+
+
+.wrapper {
+  border: 2px solid #dddd;
+  display: flex;
+}
+
+.card {
+  display: inline-block;
+  width: 50%;
+
+}
