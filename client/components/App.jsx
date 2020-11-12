@@ -28,9 +28,9 @@ class App extends React.Component {
     return(
       <div>
       <h1>You're Fired!</h1>   
-      <TrumpImage />
-     <h4>{this.state.quote}</h4>
      
+     <h4>{this.state.quote}</h4>
+     <TrumpImage />
      
 
      </div>
