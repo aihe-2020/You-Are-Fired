@@ -2,15 +2,28 @@ import React from 'react'
 import Quote from './Quote'
 
 
+
 import { getDonQuote,getKanyeQuote } from '../api'
+
+import TrumpImage from './TrumpImage'
+
+
+
+
 
 class App extends React.Component {
 
   state = {
+
    donQuote:'',
    kanyeQuote:''
+
+
+   
+
   }
   componentDidMount () {
+
     // let donQuote = getQuote()
     getDonQuote()
     .then(res => {this.setState({donQuote: res.value})})
@@ -22,6 +35,7 @@ class App extends React.Component {
     }
       // advice()
       // .then(res => this .setState({advice: res.advice}))
+
 
       // getKanyeQuote()
       // .then(res => {this.setState({ kanyeQuote: res.value })
@@ -36,9 +50,13 @@ class App extends React.Component {
     return(
       <div>
       <h1>You're Fired!</h1>   
+
       
      <h4>{this.state.donQuote}</h4>
      <h4>****{this.state.kanyeQuote}</h4>
+   
+     <TrumpImage />
+
      
 
      </div>

@@ -17,6 +17,7 @@ export function getDonQuote() {
     })
 }
 
+
 export function getKanyeQuote(){
 
  
@@ -27,3 +28,4 @@ export function getKanyeQuote(){
       return response.body
     })
 }
+
