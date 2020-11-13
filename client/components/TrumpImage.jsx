@@ -6,7 +6,7 @@ import trumpPhotos from '../horriblePictures'
 export default function TrumpImage(props) {
  
 
-  let num = (Math.floor(Math.random() * 7))
+  let num = (Math.floor(Math.random() * 12))
   let img = trumpPhotos[num]
   console.log(num)
   console.log(img) 
