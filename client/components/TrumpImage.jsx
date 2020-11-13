@@ -7,17 +7,11 @@ export default function TrumpImage(props) {
  
 
   let num = (Math.floor(Math.random() * 12))
-  let img = trumpPhotos[num]
-  console.log(num)
-  console.log(img) 
+  let img = trumpPhotos[num] 
   return (
      <img width='500px' src={img} />
      
-
-
   )   
 }
 
- 
-//use set state to call image link
-// use onCLick button event to change
+
