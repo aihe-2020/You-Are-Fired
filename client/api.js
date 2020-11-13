@@ -4,7 +4,7 @@ import request from 'superagent'
 
 const serverURL = 'http://localhost:3000/api/v1'
 const trumpURL = 'http://tronalddump.io/random/quote'
-const kanyaURL = 'https://api.kanye.rest/?format=text'
+const kanyeURL = 'https://api.kanye.rest/?format=text'
 
 
 

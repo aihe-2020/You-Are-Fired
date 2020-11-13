@@ -4,6 +4,7 @@
 
 
 body {
+  display:flex;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
@@ -20,7 +21,8 @@ body {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 h4 {
@@ -32,22 +34,57 @@ h4 {
   text-align: center;
 }
 
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
 
 .image {
-  border: 2px solid #ddd;
-  border-radius: 8px;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
   padding: 15px;
+  max-width:25%;
+  max-height: auto;
+}
 
+
+.wrapper {
+  /* align-items: auto; */
+  justify-content: space-between;
+  border: 2px solid #dddd;
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  align-self: auto;
+  display: inline-block;
+  flex: none;
+  margin-left: 20px;
+  text-align: center;
+  width: 50%;
+
+}
+
+button {
+  border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+       rgba(0, 0, 0, .2),
+       rgba(0, 0, 0, .2) 30%,
+       rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+
+button:hover {
+  background-color: rgba(255, 0, 0, 1);
 }
