@@ -11,7 +11,7 @@ export default function TrumpImage(props) {
   console.log(num)
   console.log(img) 
   return (
-     <img src={img} />
+     <img width='500px' src={img} />
      
 
 

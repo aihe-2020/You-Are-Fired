@@ -12,11 +12,10 @@ const trumpPhotos =
 
 
 
-
-      
      
     
-    export default trumpPhotos;
+    export default  trumpPhotos;
+    
       
       
 
