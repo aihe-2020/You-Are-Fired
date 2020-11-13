@@ -11,6 +11,7 @@ import KanyeImage from './KanyeImage'
 
 
 
+
 class App extends React.Component {
 
   state = {
@@ -31,17 +32,26 @@ class App extends React.Component {
     getKanyeQuote()
       .then(res => { this.setState({ kanyeQuote: res.quote }) })
     console.log(this.state)
-    // .then(res =>{this.setState({kanyeQuote:res.value})})
+  
   }
-  // advice()
-  // .then(res => this .setState({advice: res.advice}))
+ 
 
 
-  // getKanyeQuote()
-  // .then(res => {this.setState({ kanyeQuote: res.value })
-  // }):kanyeQuote
-  // getKanyeQuote()
-  // .then(res =>{this.setState({kanyeQuote:res.value})})
+   //functions to change state
+    refreshDon = (e) => {
+      e.preventDefault
+       getDonQuote() 
+      .then(res => { this.setState({ donQuote: res.value }) }) 
+      console.log(this.state)
+    }
+  
+    refreshKayne = (e) => {
+      e.preventDefault
+       getKanyeQuote() 
+      .then(res => { this.setState({ kanyeQuote: res.quote }) }) 
+      console.log(this.state)
+    }
+
 
 
 
@@ -57,14 +67,14 @@ class App extends React.Component {
           <div class='image'>
             <TrumpImage />
           </div>
-          <button>More Trump!</button>
+          <button onClick={this.refreshDon}>More Trump!</button>
         </div>
         <div class='card'>
           <h4>{this.state.kanyeQuote}</h4>
           <div class='image'>
             <KanyeImage />
           </div>
-          <button>More Kanye!</button>
+          <button onClick={this.refreshKayne}>More Kanye!</button>
         </div>
 
 
