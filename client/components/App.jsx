@@ -1,14 +1,9 @@
 import React from 'react'
 
-
-
-
 import { getDonQuote, getKanyeQuote } from '../api'
 
 import TrumpImage from './TrumpImage'
 import KanyeImage from './KanyeImage'
-
-
 
 
 
@@ -19,10 +14,9 @@ class App extends React.Component {
     donQuote: '',
     kanyeQuote: ''
 
-
-
-
   }
+
+
   componentDidMount() {
 
     // let donQuote = getQuote()
@@ -31,33 +25,34 @@ class App extends React.Component {
     // .then(res =>{this.setState({donQuote:res.value})})
     getKanyeQuote()
       .then(res => { this.setState({ kanyeQuote: res.quote }) })
-    console.log(this.state)
   
   }
  
 
-
    //functions to change state
-    refreshDon = (e) => {
+    refresh = (e) => {
       e.preventDefault
        getDonQuote() 
       .then(res => { this.setState({ donQuote: res.value }) }) 
-      console.log(this.state)
+      getKanyeQuote() 
+      .then(res => { this.setState({ kanyeQuote: res.quote }) }) 
     }
   
-    refreshKayne = (e) => {
-      e.preventDefault
-       getKanyeQuote() 
-      .then(res => { this.setState({ kanyeQuote: res.quote }) }) 
-      console.log(this.state)
-    }
+    // refreshKayne = (e) => {
+    //   //make random number
+    //   console.log('kanye')
+    //   e.preventDefault
+    //    getKanyeQuote() 
+    //   .then(res => { this.setState({ kanyeQuote: res.quote }) }) 
+    // }
 
 
 
 
   render() {
 
-    return (<div>
+    return (
+    <div>
       <h1>You're Fired!</h1>
       <div class='wrapper'>
 
@@ -67,20 +62,22 @@ class App extends React.Component {
           <div class='image'>
             <TrumpImage />
           </div>
-          <button onClick={this.refreshDon}>More Trump!</button>
+          
+          {/* <input type='submit' onClick={this.refreshDon} /> */}
         </div>
         <div class='card'>
           <h4>{this.state.kanyeQuote}</h4>
           <div class='image'>
             <KanyeImage />
           </div>
-          <button onClick={this.refreshKayne}>More Kanye!</button>
         </div>
-
-
+        <br/> 
+        
       </div>
+      <button onClick={this.refresh}>More BS!</button>
     </div>
-    )
+  
+  )
   }
 }
 

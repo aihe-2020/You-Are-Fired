@@ -19,8 +19,6 @@ export function getDonQuote() {
 
 
 export function getKanyeQuote(){
-
- 
     return request
     .get('https://api.kanye.rest')
     .then(response =>{

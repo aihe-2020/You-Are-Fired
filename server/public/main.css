@@ -9,7 +9,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  background-color:rgb(246, 232, 214);
 }
 
 .h1, .h2, .h3, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -21,8 +21,9 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: center;
+  text-decoration: underline;
 }
 
 h4 {
@@ -67,6 +68,7 @@ h4 {
 }
 
 button {
+  margin-left: 25%;
   border: 0;
     line-height: 2.5;
     padding: 0 20px;
@@ -82,6 +84,7 @@ button {
        rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
+    width:50%;            
 }
 
 
