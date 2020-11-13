@@ -7,16 +7,20 @@ const trumpPhotos =
         'https://www.nydailynews.com/resizer/v_Bp9l0cxrZsJx2p_yoy-VBIrVQ=/1200x0/center/middle/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/H3XVTUGPNNDJ5LC6EBP7FDWDAQ.jpg',
         'https://thetyee.ca/Opinion/2016/03/20/TrumpFace_610px.jpg',
         'https://i.pinimg.com/474x/10/18/50/101850b2d73b9cac6ff9c76123cf73fb.jpg',
-        'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492120407/articles/2016/01/04/how-the-p-c-police-propelled-donald-trump/160103-nichols-trump-left-tease_avyumb'
+        'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492120407/articles/2016/01/04/how-the-p-c-police-propelled-donald-trump/160103-nichols-trump-left-tease_avyumb',
+        'https://duckduckgrayduck.files.wordpress.com/2016/03/donald-trump-with-dove.png',
+        'https://bostonglobe-prod.cdn.arcpublishing.com/resizer/iDnjlRywlGbA543v3F4mdHcsNOc=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/ORLEUBRZCII6RF3ACFYYET343Q.jpg',
+        'https://d.ibtimes.co.uk/en/full/1663898/donald-trump.jpg',
+        'https://4.bp.blogspot.com/-Ec1imrzgB_o/V7uZNdQYJpI/AAAAAAAACyY/83MmJTzqvR4bN86EcJALYuz4J65RIGN_QCLcB/s1600/Trump_edit.jpg'
+        
     ]
 
 
 
-
-      
      
     
-    export default trumpPhotos;
+    export default  trumpPhotos;
+    
       
       
 
